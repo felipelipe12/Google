@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+:root {
+    --oil: #202124;
+    --night: #2D2D2D;
+    --admiral: #1b66c9;
+    --cobalt: #1a73e8;
+    --gray: #70757A;
+    --bone: #DADCE0;
+    --cotton: #F2F2F2;
+    --chiffon: #F8F9FA;
+    --white: #FFFFFF;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+body>div.container {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Section -  Header */
+header>div.container {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .links a {
+    color: var(--oil);
+    font-size: 14px;
+}
+
+header div.apps button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    transition: .3s;
+}
+
+header div.apps button:hover {
+    background-color: var(--bone);
+}
+
+header div.apps button img {
+    width: 15px;
+}
+
+header div.button button {
+    background-color: var(--cobalt);
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 14px;
+    padding: 10px 25px;
+    transition: .3s;
+}
+
+header div.button button:hover {
+    background: var(--admiral);
+    box-shadow: 0 3px 5px 0 var(--bone);
+}
+
+/* Section -  Main */
+main>div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+main div.logo {
+    display: flex;
+    justify-content: center;
+}
+
+main div.logo img {
+    width: 100%;
+}
+
+main div.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--bone);
+    border-radius: 100px;
+    padding: 5px 20px;
+    transition: .3s;
+}
+
+main div.search:hover {
+    box-shadow: 0px 1px 5px var(--bone);
+}
+
+main div.search div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div.search div:nth-child(2) input {
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    width: 350px;
+}
+
+main div.search div:nth-child(2) input:focus-visible {
+    outline: none;
+}
+
+main div.search div:nth-child(3) {
+    display: flex;
+    gap: 15px;
+}
+
+main div.search div:nth-child(3) button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+main div.search .popover {
+    position: relative;
+}
+
+main div.search .popover:hover span {
+    display: block;
+}
+
+main div.search .popover span {
+    display: none;
+    background-color: var(--night);
+    border: 1px solid var(--white);
+    position: absolute;
+    top: 38px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+main div.search .popover span::after {
+    content: '';
+    background-color: var(--night);
+    position: absolute;
+    right: 50%;
+    top: -5px;
+    transform: translateX(50%) rotate(45deg);
+    height: 10px;
+    width: 10px;
+}
+
+main div.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main div.buttons button {
+    background-color: var(--chiffon);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .3s;
+}
+
+main div.buttons button:hover {
+    background-color: var(--chiffon);
+    border: 1px solid var(--bone);
+    box-shadow: 0 1px 1px var(--bone);
+}
+
+/* Section - Footer */
+footer>div.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cotton);
+}
+
+footer div.country,
+footer div.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+footer div.links div {
+    display: flex;
+    gap: 30px;
+}
+
+footer hr.divider {
+    border-top: 1px solid var(--bone);
+}
+
+footer div span,
+footer div a {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 769px) {
+
+    /* Section - Header */
+    header>div.container {
+        justify-content: space-between;
+    }
+
+    /* Section - Main */
+    main div.logo img {
+        width: 75%;
+    }
+
+    main div.search div:nth-child(2) input {
+        width: 150px;
+    }
+
+    /* Section - Footer */
+    footer div.country,
+    footer div.links {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer div.links div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
