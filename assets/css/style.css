@@ -92,24 +92,24 @@ header div.button button:hover {
     box-shadow: 0 3px 5px 0 var(--bone);
 }
 
-/* Section -  Main */
-main>div.container {
+/* Section -  Section */
+section>div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
 }
 
-main div.logo {
+section div.logo {
     display: flex;
     justify-content: center;
 }
 
-main div.logo img {
+section div.logo img {
     width: 100%;
 }
 
-main div.search {
+section div.search {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -121,48 +121,48 @@ main div.search {
     transition: .3s;
 }
 
-main div.search:hover {
+section div.search:hover {
     box-shadow: 0px 1px 5px var(--bone);
 }
 
-main div.search div:nth-child(1) {
+section div.search div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main div.search div:nth-child(2) input {
+section div.search div:nth-child(2) input {
     border: none;
     font-size: 16px;
     height: 35px;
     width: 350px;
 }
 
-main div.search div:nth-child(2) input:focus-visible {
+section div.search div:nth-child(2) input:focus-visible {
     outline: none;
 }
 
-main div.search div:nth-child(3) {
+section div.search div:nth-child(3) {
     display: flex;
     gap: 15px;
 }
 
-main div.search div:nth-child(3) button {
+section div.search div:nth-child(3) button {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
 }
 
-main div.search .popover {
+section div.search .popover {
     position: relative;
 }
 
-main div.search .popover:hover span {
+section div.search .popover:hover span {
     display: block;
 }
 
-main div.search .popover span {
+section div.search .popover span {
     display: none;
     background-color: var(--night);
     border: 1px solid var(--white);
@@ -175,7 +175,7 @@ main div.search .popover span {
     white-space: nowrap;
 }
 
-main div.search .popover span::after {
+section div.search .popover span::after {
     content: '';
     background-color: var(--night);
     position: absolute;
@@ -186,12 +186,12 @@ main div.search .popover span::after {
     width: 10px;
 }
 
-main div.buttons {
+section div.buttons {
     display: flex;
     gap: 10px;
 }
 
-main div.buttons button {
+section div.buttons button {
     background-color: var(--chiffon);
     border: 1px solid transparent;
     border-radius: 5px;
@@ -199,7 +199,7 @@ main div.buttons button {
     transition: .3s;
 }
 
-main div.buttons button:hover {
+section div.buttons button:hover {
     background-color: var(--chiffon);
     border: 1px solid var(--bone);
     box-shadow: 0 1px 1px var(--bone);
@@ -241,12 +241,12 @@ footer div a {
         justify-content: space-between;
     }
 
-    /* Section - Main */
-    main div.logo img {
+    /* Section - section */
+    section div.logo img {
         width: 75%;
     }
 
-    main div.search div:nth-child(2) input {
+    section div.search div:nth-child(2) input {
         width: 150px;
     }
 
