@@ -25,3 +25,7 @@ Corrigidos/melhorados os seguintes problemas presentes no projeto real, como:
 - Alinhamentos;
 - Paleta de cores;
 - Responsividade;
+
+<br>
+
+<div align="center">2023 - Felipe Almeida</div>
