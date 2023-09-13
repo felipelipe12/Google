@@ -28,4 +28,4 @@ Corrigidos/melhorados os seguintes problemas presentes no projeto real, como:
 
 <br>
 
-<div align="center">2023 - Felipe Almeida</div>
+<div align="center">Finalizado em 2023</div>
