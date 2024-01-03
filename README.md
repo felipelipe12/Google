@@ -28,4 +28,4 @@ Corrigidos/melhorados os seguintes problemas presentes no projeto real, como:
 
 <br>
 
-<div align="center">Feito em 2023</div>
+<div align="center">2023</div>
