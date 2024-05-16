@@ -185,7 +185,7 @@ main div.container div.google-buttons {
     gap: 10px;
 }
 
-main div.google-buttons button {
+main div.container div.google-buttons button {
     background-color: var(--chiffon);
     border: 1px solid transparent;
     border-radius: 5px;
@@ -193,7 +193,7 @@ main div.google-buttons button {
     transition: .3s;
 }
 
-main div.google-buttons button:hover {
+main div.container div.google-buttons button:hover {
     background-color: var(--chiffon);
     border: 1px solid var(--bone);
     box-shadow: 0 1px 1px var(--bone);
@@ -204,24 +204,26 @@ footer {
     background-color: var(--cotton);
 }
 
-footer div.google-country,
-footer div.google-links {
+footer div.container div.google-country,
+footer div.container div.google-links {
     display: flex;
+    gap: 30px;
     justify-content: space-between;
     padding: 15px 30px;
 }
 
-footer div.links div {
+footer div.container hr.google-divider {
+    border-top: 1px solid var(--bone);
+}
+
+footer div.container div.google-links div.google-links__about,
+footer div.container div.google-links div.google-links__terms {
     display: flex;
     gap: 30px;
 }
 
-footer hr.google-divider {
-    border-top: 1px solid var(--bone);
-}
-
-footer div span,
-footer div a {
+footer div.container div.google-country span,
+footer div.container div.google-links a {
     color: var(--oil);
     font-size: 14px;
 }
