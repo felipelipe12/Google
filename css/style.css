@@ -15,8 +15,6 @@
     --cotton: #F2F2F2;
     --chiffon: #F8F9FA;
     --white: #FFFFFF;
-
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -35,6 +33,7 @@ button {
 
 body {
     height: 100dvh;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,9 +106,9 @@ main div.container {
     justify-content: center;
 } */
 
-main div.logo img {
+/* main div.logo img {
     width: 100%;
-}
+} */
 
 main div.search {
     display: flex;
@@ -230,7 +229,7 @@ footer hr.divider {
 
 footer div span,
 footer div a {
-    color: var(--gray);
+    color: var(--oil);
     font-size: 14px;
 }
 
