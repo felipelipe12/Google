@@ -34,6 +34,7 @@ button {
 body {
     height: 100dvh;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +60,7 @@ header div.container nav.google-links a {
     font-size: 14px;
 }
 
-header div.container nav.google-links a:nth-child(3) {
+header div.container button.google-apps {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,11 +71,11 @@ header div.container nav.google-links a:nth-child(3) {
     transition: .3s;
 }
 
-header div.container nav.google-links a:nth-child(3):hover {
+header div.container button.google-apps:hover {
     background-color: var(--bone);
 }
 
-header div.container nav.google-links a:nth-child(3) img {
+header div.container button.google-apps img {
     height: 15px;
     width: 15px;
 }
@@ -93,7 +94,7 @@ header div.container button.google-login:hover {
     box-shadow: 0 3px 5px 0 var(--bone);
 }
 
-/* Section -  Main */
+/* Main */
 main div.container {
     display: flex;
     flex-direction: column;
@@ -101,16 +102,12 @@ main div.container {
     gap: 25px;
 }
 
-/* main div.logo {
-    display: flex;
-    justify-content: center;
-} */
+main div.container img.google-logo {
+    height: 92px;
+    width: 272px;
+}
 
-/* main div.logo img {
-    width: 100%;
-} */
-
-main div.search {
+main div.container div.google-search {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -122,48 +119,40 @@ main div.search {
     transition: .3s;
 }
 
-main div.search:hover {
+main div.container div.google-search:hover {
     box-shadow: 0px 1px 5px var(--bone);
 }
 
-main div.search div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main div.container div.google-search img {
+    height: 25px;
+    width: 25px;
 }
 
-main div.search div:nth-child(2) input {
+main div.container div.google-search input {
     border: none;
     font-size: 16px;
     height: 35px;
     width: 350px;
 }
 
-main div.search div:nth-child(2) input:focus-visible {
+main div.container div.google-search input:focus-visible {
     outline: none;
 }
 
-main div.search div:nth-child(3) {
-    display: flex;
-    gap: 15px;
-}
-
-main div.search div:nth-child(3) button {
+main div.container div.google-search button.google-popover {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
-}
-
-main div.search .popover {
     position: relative;
 }
 
-main div.search .popover:hover span {
-    display: block;
+main div.container div.google-search button.google-popover img {
+    height: 25px;
+    width: 25px;
 }
 
-main div.search .popover span {
+main div.container div.google-search button.google-popover span {
     display: none;
     background-color: var(--night);
     border: 1px solid var(--white);
@@ -176,7 +165,11 @@ main div.search .popover span {
     white-space: nowrap;
 }
 
-main div.search .popover span::after {
+main div.container div.google-search button.google-popover:hover span {
+    display: block;
+}
+
+main div.container div.google-search button.google-popover span::after {
     content: '';
     background-color: var(--night);
     position: absolute;
@@ -187,12 +180,12 @@ main div.search .popover span::after {
     width: 10px;
 }
 
-main div.buttons {
+main div.container div.google-buttons {
     display: flex;
     gap: 10px;
 }
 
-main div.buttons button {
+main div.google-buttons button {
     background-color: var(--chiffon);
     border: 1px solid transparent;
     border-radius: 5px;
@@ -200,19 +193,19 @@ main div.buttons button {
     transition: .3s;
 }
 
-main div.buttons button:hover {
+main div.google-buttons button:hover {
     background-color: var(--chiffon);
     border: 1px solid var(--bone);
     box-shadow: 0 1px 1px var(--bone);
 }
 
-/* Section - Footer */
+/* Footer */
 footer {
     background-color: var(--cotton);
 }
 
-footer div.country,
-footer div.links {
+footer div.google-country,
+footer div.google-links {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -223,7 +216,7 @@ footer div.links div {
     gap: 30px;
 }
 
-footer hr.divider {
+footer hr.google-divider {
     border-top: 1px solid var(--bone);
 }
 
