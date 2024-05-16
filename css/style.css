@@ -33,33 +33,34 @@ button {
     font-size: 14px;
 }
 
-body>div.container {
+body {
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Section -  Header */
-header>div.container {
+/* Header */
+header div.container {
     display: flex;
     justify-content: end;
+    align-items: center;
     gap: 20px;
     padding: 15px 30px;
 }
 
-header .links {
+header div.container nav.google-links {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-header .links a {
+header div.container nav.google-links a {
     color: var(--oil);
     font-size: 14px;
 }
 
-header div.apps button {
+header div.container button.google-apps {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,15 +71,15 @@ header div.apps button {
     transition: .3s;
 }
 
-header div.apps button:hover {
+header div.container button.google-apps:hover {
     background-color: var(--bone);
 }
 
-header div.apps button img {
+header div.container button.google-apps img {
     width: 15px;
 }
 
-header div.button button {
+header div.container button.google-login {
     background-color: var(--cobalt);
     border-radius: 5px;
     color: var(--white);
@@ -87,29 +88,29 @@ header div.button button {
     transition: .3s;
 }
 
-header div.button button:hover {
+header div.container button.google-login:hover {
     background: var(--admiral);
     box-shadow: 0 3px 5px 0 var(--bone);
 }
 
-/* Section -  Section */
-section>div.container {
+/* Section -  Main */
+main div.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
 }
 
-section div.logo {
+main div.logo {
     display: flex;
     justify-content: center;
 }
 
-section div.logo img {
+main div.logo img {
     width: 100%;
 }
 
-section div.search {
+main div.search {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -121,48 +122,48 @@ section div.search {
     transition: .3s;
 }
 
-section div.search:hover {
+main div.search:hover {
     box-shadow: 0px 1px 5px var(--bone);
 }
 
-section div.search div:nth-child(1) {
+main div.search div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section div.search div:nth-child(2) input {
+main div.search div:nth-child(2) input {
     border: none;
     font-size: 16px;
     height: 35px;
     width: 350px;
 }
 
-section div.search div:nth-child(2) input:focus-visible {
+main div.search div:nth-child(2) input:focus-visible {
     outline: none;
 }
 
-section div.search div:nth-child(3) {
+main div.search div:nth-child(3) {
     display: flex;
     gap: 15px;
 }
 
-section div.search div:nth-child(3) button {
+main div.search div:nth-child(3) button {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
 }
 
-section div.search .popover {
+main div.search .popover {
     position: relative;
 }
 
-section div.search .popover:hover span {
+main div.search .popover:hover span {
     display: block;
 }
 
-section div.search .popover span {
+main div.search .popover span {
     display: none;
     background-color: var(--night);
     border: 1px solid var(--white);
@@ -175,7 +176,7 @@ section div.search .popover span {
     white-space: nowrap;
 }
 
-section div.search .popover span::after {
+main div.search .popover span::after {
     content: '';
     background-color: var(--night);
     position: absolute;
@@ -186,12 +187,12 @@ section div.search .popover span::after {
     width: 10px;
 }
 
-section div.buttons {
+main div.buttons {
     display: flex;
     gap: 10px;
 }
 
-section div.buttons button {
+main div.buttons button {
     background-color: var(--chiffon);
     border: 1px solid transparent;
     border-radius: 5px;
@@ -199,16 +200,14 @@ section div.buttons button {
     transition: .3s;
 }
 
-section div.buttons button:hover {
+main div.buttons button:hover {
     background-color: var(--chiffon);
     border: 1px solid var(--bone);
     box-shadow: 0 1px 1px var(--bone);
 }
 
 /* Section - Footer */
-footer>div.container {
-    display: flex;
-    flex-direction: column;
+footer {
     background-color: var(--cotton);
 }
 
@@ -241,12 +240,12 @@ footer div a {
         justify-content: space-between;
     }
 
-    /* Section - section */
-    section div.logo img {
+    /* Section - Main */
+    main div.logo img {
         width: 75%;
     }
 
-    section div.search div:nth-child(2) input {
+    main div.search div:nth-child(2) input {
         width: 150px;
     }
 

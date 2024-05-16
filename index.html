@@ -11,52 +11,49 @@
 </head>
 
 <body>
-    <div class='container'>
-        <header>
-            <div class="container">
-                <div class="links">
-                    <a href="#">Gmail</a>
-                    <a href="#">Imagens</a>
+    <header>
+        <div class="container">
+            <nav class="google-links">
+                <a href="#">Gmail</a>
+                <a href="#">Imagens</a>
+            </nav>
+            <button class="google-apps" title="Google Apps" onclick="appsPopup()">
+                <img src="img/navbar_apps.png" alt="Image Google Apps">
+            </button>
+            <button class="google-login" title="Google Login">Fazer login</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo_google.png" alt="Google Logo">
+            </div>
+            <div class="search">
+                <div>
+                    <img src="img/search_src.png" width="25px">
                 </div>
-                <div class="apps">
-                    <button>
-                        <img src="img/navbar_apps.png">
+                <div>
+                    <input type="text">
+                </div>
+                <div>
+                    <button class="popover">
+                        <img src="img/search_mic.png" width="25px">
+                        <span>Pesquisar por voz</span>
+                    </button>
+                    <button class="popover">
+                        <img src="img/search_cam.png" width="25px">
+                        <span>Pesquisar por imagem</span>
                     </button>
                 </div>
-                <div class="button">
-                    <button>Fazer login</button>
-                </div>
             </div>
-        </header>
-        <section>
-            <div class="container">
-                <div class="logo">
-                    <img src="img/logo_google.png">
-                </div>
-                <div class="search">
-                    <div>
-                        <img src="img/search_src.png" width="25px">
-                    </div>
-                    <div>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <button class="popover">
-                            <img src="img/search_mic.png" width="25px">
-                            <span>Pesquisar por voz</span>
-                        </button>
-                        <button class="popover">
-                            <img src="img/search_cam.png" width="25px">
-                            <span>Pesquisar por imagem</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button>Pesquisa Google</button>
-                    <button>Estou com sorte</button>
-                </div>
+            <div class="buttons">
+                <button>Pesquisa Google</button>
+                <button>Estou com sorte</button>
             </div>
-        </section>
+        </div>
+    </main>
+    <div class='container'>
+        
         <footer>
             <div class="container">
                 <div class="country">
