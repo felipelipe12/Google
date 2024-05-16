@@ -60,7 +60,7 @@ header div.container nav.google-links a {
     font-size: 14px;
 }
 
-header div.container button.google-apps {
+header div.container nav.google-links a:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,11 +71,12 @@ header div.container button.google-apps {
     transition: .3s;
 }
 
-header div.container button.google-apps:hover {
+header div.container nav.google-links a:nth-child(3):hover {
     background-color: var(--bone);
 }
 
-header div.container button.google-apps img {
+header div.container nav.google-links a:nth-child(3) img {
+    height: 15px;
     width: 15px;
 }
 
@@ -101,10 +102,10 @@ main div.container {
     gap: 25px;
 }
 
-main div.logo {
+/* main div.logo {
     display: flex;
     justify-content: center;
-}
+} */
 
 main div.logo img {
     width: 100%;
