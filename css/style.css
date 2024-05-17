@@ -4,17 +4,28 @@
     padding: 0;
 }
 
-/* Global */
 :root {
     --oil: #202124;
     --night: #2D2D2D;
     --admiral: #1b66c9;
     --cobalt: #1a73e8;
-    --gray: #70757A;
     --bone: #DADCE0;
     --cotton: #F2F2F2;
     --chiffon: #F8F9FA;
     --white: #FFFFFF;
+}
+
+/* Global */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a {
@@ -29,15 +40,6 @@ button {
     border: none;
     cursor: pointer;
     font-size: 14px;
-}
-
-body {
-    height: 100dvh;
-    font-family: Arial, Helvetica, sans-serif;
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 /* Header */
@@ -229,34 +231,58 @@ footer div.container div.google-links a {
 }
 
 @media screen and (max-width: 769px) {
-
-    /* Section - Header */
-    header>div.container {
+    /* Header */
+    header div.container {
         justify-content: space-between;
+        gap: 15px;
     }
 
-    /* Section - Main */
-    main div.logo img {
-        width: 75%;
+    header div.container nav.google-links {
+        gap: 15px;
     }
 
-    main div.search div:nth-child(2) input {
-        width: 150px;
+    header div.container nav.google-links a {
+        font-size: 12px;
     }
 
-    /* Section - Footer */
-    footer div.country,
-    footer div.links {
+    header div.container button.google-login {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    /* Main */
+    main div.container img.google-logo {
+        height: 69px;
+        width: 204px;
+    }
+
+    main div.container div.google-search {
+        width: 80%;
+    }
+
+    main div.container div.google-search input {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer div.container div.google-country,
+    footer div.container div.google-links {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
-    footer div.links div {
+    footer div.container div.google-links div.google-links__about,
+    footer div.container div.google-links div.google-links__terms {
         display: flex;
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
+    }
+
+    footer div.container div.google-country span,
+    footer div.container div.google-links a {
+        font-size: 12px;
     }
 }

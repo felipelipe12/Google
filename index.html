@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Google Clone">
-    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'none'"> -->
-    <title>Google Clone</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon_google.png">
-</head>
-
-<body>
-    <header>
-        <div class="container">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Google Clone">
+      <title>Google Clone</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" type="image/x-icon" href="img/favicon.png">
+   </head>
+   <body>
+      <header>
+         <div class="container">
             <nav class="google-links">
-                <a href="#">Gmail</a>
-                <a href="#">Imagens</a>
+               <a href="#">Gmail</a>
+               <a href="#">Imagens</a>
             </nav>
-            <button class="google-apps" title="Google Apps" onclick="appsPopup()">
-                <img src="img/navbar_apps.png" alt="Image Google Apps">
+            <button class="google-apps" type="button" title="Google Apps" onclick="appsPopup()">
+               <img src="img/google-apps.png" alt="Image Google Apps">
             </button>
             <button class="google-login" title="Google Login" type="button">Fazer login</button>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <img class="google-logo" src="img/logo_google.png" alt="Image Google Logo">
+         </div>
+      </header>
+      <main>
+         <div class="container">
+            <img class="google-logo" src="img/google-logo.png" alt="Image Google Logo">
             <div class="google-search">
-                <img src="img/search_src.png" alt="Image Google Search Icon">
-                <input type="text" aria-label="Search">
-                <button class="google-popover" type="button">
-                    <img src="img/search_mic.png" alt="Image Google Microphone Icon">
-                    <span>Pesquisar por voz</span>
-                </button>
-                <button class="google-popover" type="button">
-                    <img src="img/search_cam.png" alt="Image Google Camera Icon">
-                    <span>Pesquisar por imagem</span>
-                </button>               
+               <img src="img/google-search.png" alt="Image Google Search Icon">
+               <input type="text" aria-label="Search">
+               <button class="google-popover" type="button">
+                  <img src="img/google-microphone.png" alt="Image Google Microphone Icon">
+                  <span>Pesquisar por voz</span>
+               </button>
+               <button class="google-popover" type="button">
+                  <img src="img/google-camera.png" alt="Image Google Camera Icon">
+                  <span>Pesquisar por imagem</span>
+               </button>
             </div>
             <div class="google-buttons">
-                <button type="button">Pesquisa Google</button>
-                <button type="button">Estou com sorte</button>
+               <button type="button">Pesquisa Google</button>
+               <button type="button">Estou com sorte</button>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
+         </div>
+      </main>
+      <footer>
+         <div class="container">
             <div class="google-country">
-                <span>Brasil</span>
+               <span>Brasil</span>
             </div>
             <hr class="google-divider">
             <div class="google-links">
-                <div class="google-links__about">
-                    <a href="#">Sobre</a>
-                    <a href="#">Publicidade</a>
-                    <a href="#">Negócios</a>
-                    <a href="#">Como funciona a Pesquisa</a>
-                </div>
-                <div class="google-links__terms">
-                    <a href="#">Privacidade</a>
-                    <a href="#">Termos</a>
-                    <a href="#">Configurações</a>
-                </div>
+               <div class="google-links__about">
+                  <a href="#">Sobre</a>
+                  <a href="#">Publicidade</a>
+                  <a href="#">Negócios</a>
+                  <a href="#">Como funciona a Pesquisa</a>
+               </div>
+               <div class="google-links__terms">
+                  <a href="#">Privacidade</a>
+                  <a href="#">Termos</a>
+                  <a href="#">Configurações</a>
+               </div>
             </div>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
-
+         </div>
+      </footer>
+      <script src="js/script.js"></script>
+   </body>
 </html>
