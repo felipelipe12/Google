@@ -42,13 +42,16 @@ button {
     font-size: 14px;
 }
 
+.container {
+    padding: 15px 30px;
+}
+
 /* Header */
 header div.container {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 20px;
-    padding: 15px 30px;
 }
 
 header div.container nav.google-links {
@@ -206,28 +209,28 @@ footer {
     background-color: var(--cotton);
 }
 
-footer div.container div.google-country,
-footer div.container div.google-links {
+footer div.google-country div.container,
+footer div.google-links div.container {
     display: flex;
     gap: 30px;
     justify-content: space-between;
-    padding: 15px 30px;
 }
 
-footer div.container hr.google-divider {
-    border-top: 1px solid var(--bone);
-}
-
-footer div.container div.google-links div.google-links__about,
-footer div.container div.google-links div.google-links__terms {
-    display: flex;
-    gap: 30px;
-}
-
-footer div.container div.google-country span,
-footer div.container div.google-links a {
+footer div.google-country div.container span,
+footer div.google-links div.container a {
     color: var(--oil);
     font-size: 14px;
+}
+
+footer hr.google-divider {
+    border-top: 1px solid var(--bone);
+    border-bottom: none;
+}
+
+footer div.google-links div.container div.google-links__about,
+footer div.google-links div.container div.google-links__terms {
+    display: flex;
+    gap: 30px;
 }
 
 @media screen and (max-width: 769px) {
@@ -256,33 +259,38 @@ footer div.container div.google-links a {
         width: 204px;
     }
 
-    main div.container div.google-search {
-        width: 80%;
-    }
-
     main div.container div.google-search input {
         width: 100%;
     }
+    main div.container div.google-search img,
+    main div.container div.google-search button.google-popover img {
+        height: 20px;
+        width: 20px;
+    }
+
+    main div.container div.google-buttons button {
+        font-size: 12px;
+    }
 
     /* Footer */
-    footer div.container div.google-country,
-    footer div.container div.google-links {
+    footer div.google-country div.container,
+    footer div.google-links div.container {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
-    footer div.container div.google-links div.google-links__about,
-    footer div.container div.google-links div.google-links__terms {
+    footer div.google-links div.container div.google-links__about,
+    footer div.google-links div.container div.google-links__terms {
         display: flex;
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
     }
 
-    footer div.container div.google-country span,
-    footer div.container div.google-links a {
+    footer div.google-country div.container span,
+    footer div.google-links div.container a {
         font-size: 12px;
     }
 }
