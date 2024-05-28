@@ -5,8 +5,9 @@
 <br>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/HTML5-4285f4?style=for-the-badge&logo=html5&logoColor=fbbc05"/>
-  <img src="https://img.shields.io/badge/CSS3-ea4335?style=for-the-badge&logo=css3&logoColor=34a853"/>
+  <img src="https://img.shields.io/badge/HTML5-4285f4?style=for-the-badge&logo=html5&logoColor=FBBC05"/>
+  <img src="https://img.shields.io/badge/CSS3-34A853?style=for-the-badge&logo=css3&logoColor=FBBC05"/>
+  <img src="https://img.shields.io/badge/JavaScript-ea4335?style=for-the-badge&logo=javascript&logoColor=FBBC05"/>
 </div>
 
 <br>
@@ -16,9 +17,9 @@
 Projeto desenvolvido para aprendizado e consulta dos conceitos basicos de estruturação, 
 
 Para o desenvolvimento do projeto, foram utilizados os conceitos: 
-- Flexbox;
+- Flexbox e Grid Layout;
 - Responsividade;
-- Padronização de código;
+- Padronização e organização do código;
 
 Corrigidos/melhorados os seguintes problemas presentes no projeto real, como:
 - Animações;
