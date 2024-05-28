@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="assets/img/logo_google.png">
+    <img src="img/google-logo.png">
 </div>
 
 <br>
